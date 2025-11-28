@@ -1,11 +1,96 @@
-# Sample Snack app
+🌤️ App de Previsão do Tempo — React Native (Expo)
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+Um aplicativo moderno de previsão do tempo desenvolvido com React Native + Expo, utilizando animações, componentes reutilizáveis e consumo de API em tempo real.
+O usuário pode pesquisar qualquer cidade e visualizar informações climáticas atualizadas de forma rápida e intuitiva.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+🚀 Tecnologias Utilizadas
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+React Native
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+Expo
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+Styled-Components
+
+Axios
+
+Lottie Animations
+
+API de Previsão do Tempo (OpenWeatherMap ou similar)
+
+📲 Funcionalidades
+
+🔍 Busca por cidade
+
+🌡️ Temperatura atual
+
+☁️ Condições climáticas (céu limpo, chuva, nublado, etc.)
+
+🎨 Interface moderna com tema personalizado
+
+🎞️ Animações dinâmicas baseadas no clima
+
+📍 Feedback visual instantâneo
+
+📱 Layout responsivo para Android e iOS
+
+🗂️ Estrutura do Projeto
+app-de-previsao-do-tempo/
+│── App.js
+│── index.js
+│── app.json
+│── package.json
+│
+├── components/
+│   ├── WeatherCard.js
+│   ├── WeatherAnimations.js
+│   └── SearchBar.js
+│
+├── hooks/
+│   └── useWeather.js
+│
+├── styles/
+│   └── globalStyles.js
+│
+├── theme/
+│   └── theme.js
+│
+└── assets/
+    ├── icon.png
+    ├── splash-icon.png
+    └── animações e ícones
+
+⚙️ Como Executar o Projeto
+1️⃣ Instale as dependências
+npm install
+
+2️⃣ Execute o aplicativo
+npx expo start
+
+3️⃣ Abra no seu dispositivo
+
+Via app Expo Go
+
+Ou no emulador Android/iOS
+
+🔧 Variáveis de Ambiente
+
+Crie um arquivo .env na raiz do projeto:
+
+API_KEY=SUA_CHAVE_AQUI
+
+🧠 Principais Arquivos
+🔹 useWeather.js
+
+Responsável por buscar os dados na API e gerenciar estados.
+
+🔹 WeatherCard.js
+
+Exibe as informações do clima de forma estilizada.
+
+🔹 WeatherAnimations.js
+
+Renderiza animações conforme a condição climática.
+
+🔹 SearchBar.js
+
+Campo de pesquisa com debounce e UX refinado.
